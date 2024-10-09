@@ -76,6 +76,9 @@ header p {
 
 }
 
+.card h3 {
+    font-weight: 500;
+}
 .card p {
     color:var(--gray);
     margin-bottom: 1rem;
