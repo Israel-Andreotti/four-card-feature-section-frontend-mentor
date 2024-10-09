@@ -37,98 +37,66 @@ header h1 span {
 
 header p {
     margin-top: 1rem;
-    color: var(--gray)
+    color: var(--gray);
+    font-size: 1rem;
 }
 
 .container {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+
 }
 
-.card {
-    margin-inline: 1.5rem;
-    margin-top: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.green {
-    border-top: 5px solid var(--cyan);
+.cyan {
+    border-top: 5px solid var(--cyan)!important; 
 }
 
 .red {
-    border-top: 5px solid var(--red);
+    border-top: 5px solid var(--red)!important;
 }
 
 .yellow {
-    border-top: 5px solid var(--orange);
+    border-top: 5px solid var(--orange)!important;
 }
 
 .blue {
-    border-top: 5px solid var(--blue);
+    border-top: 5px solid var(--blue)!important;
 }
 
-.content {
+.card {
+    background-color: white;
+    margin: 1rem 2rem;
+    border-top: 5px solid;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.4);
+    border-radius: 7px;
+    margin-bottom: 2rem;
+
 }
 
-.content h2 {
-    font-size: 1.2rem;
-}
-
-.content p {
-    color: var(--gray);
-    line-height: 1.6rem;
+.card p {
+    color:var(--gray);
+    margin-bottom: 1rem;
+    margin-top: .5rem;
     font-size: .9rem;
-    margin-top: .3rem;
 }
 
-.content img {
-    margin-top: 1.3rem;
-    width: 70px;
+.card img {
     margin-left: auto;
+    display: block;
     padding-right: 1rem;
+    width: 80px;
 }
-
 
 @media (width >= 1024px) {
-    header {
-        width: 500px;
-        display: block;
-        margin: 2.5rem auto
-    }
-
-    header h1 {
-        width: 400px;
-        display: block;
-        margin: 0 auto
-    }
-
-    header p {
-        color: var(--gray)
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
     }
 
     .card {
+        height: 200px;
         width: 280px;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .green {
-        transform: translateY(50%);
-    }
-
-    .yellow {
-        transform: translateY(112%) translatex(-117%);
-    }
-
-    .blue {
-        transform: translateY(-62%) translateX(117%);
     }
 }
